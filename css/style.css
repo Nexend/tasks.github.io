@@ -1,0 +1,143 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 18px;
+}
+body span{
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header__title{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.about{
+    position: relative;
+    margin-bottom: 30px;
+}
+.about__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.about-image{
+    user-select: none;
+    position: absolute;
+    right: 100px;
+}
+.about-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.about__list li{
+    margin-bottom: 5px;
+}
+.target{
+    margin-bottom: 30px;
+}
+.experience{
+    margin-bottom: 30px;
+}
+.education{
+    margin-bottom: 30px;
+}
+.skills{
+    margin-bottom: 30px;
+}
+.skills__title{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.skills__list-item{
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 2px;
+}
+.skills__list li::before{
+    content: "-";
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.qualities{
+    margin-bottom: 50px;
+}
+.qualities__title{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.qualities__list-item{
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 2px;
+}
+.qualities__list li::before{
+    content: "-";
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.tasks{
+    margin-bottom: 30px;
+}
+.tasks__title{
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.tasks-box{
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 870px) {
+    .about-image img{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 780px) {
+    .about-image{
+        position: initial;
+    }
+}
+@media (max-width: 495px) {
+    .about-image img{
+        width: 100px;
+        height: 100px;
+    }
+    body{
+        font-size: 16px;
+    }
+}
